@@ -12,6 +12,7 @@ seaborn="*"
 joblib="*"
 matplotlib="*"
 numpy="*"
+scikit-learn="*"
 
 [requires]
 python_version="3.9"
