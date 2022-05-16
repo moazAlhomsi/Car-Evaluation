@@ -7,13 +7,6 @@ st.set_page_config(page_title='Car-Evaluation',
 from EDA import run_EDA_app
 from ML import run_ML_app
 
-
-
-
-
-
-
-
 menu = ["Home","EDA","ML"]
 choice = st.sidebar.selectbox("Menu",menu)
 
