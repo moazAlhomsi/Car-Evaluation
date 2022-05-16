@@ -3,7 +3,7 @@ import joblib
 import os
 import numpy as np
 
-st.header('ML Model')
+
 attribute_info = """
 	Attributes Info
 - buying ['vhigh':3,'high': 0, 'med': 2, 'low': 1]
@@ -14,8 +14,7 @@ attribute_info = """
 - safety ['low': 1, 'med': 2, 'high': 0]
 - class ['unacc': 1, 'acc': 0]
 """
-with st.expander('Info'):
-	st.subheader(attribute_info)
+
 
 label_buy_main = {'vhigh':3,'high': 0, 'med': 2, 'low': 1}
 label_door = {'2': 0, '3': 1, '4': 2, '5more': 3}
@@ -24,11 +23,11 @@ label_lug = {'small': 1, 'med': 2, 'big': 0}
 label_safety = {'low': 1, 'med': 2, 'high': 0}
 label_class = {'unacc': 1, 'acc': 0}
 
-def get_fvalue(val):
-	feature_dict = {'vhigh':3,'high': 0, 'med': 2, 'low': 1}
-	for key,value in feature_dict.items():
-		if val == key:
-			return value
+# def get_fvalue(val):
+# 	feature_dict = {'vhigh':3,'high': 0, 'med': 2, 'low': 1}
+# 	for key,value in feature_dict.items():
+# 		if val == key:
+# 			return value
 
 def get_value(val,my_dict):
 	for key,value in my_dict.items():
@@ -42,6 +41,9 @@ def load_model(model_file):
 	return loaded_model
 
 def run_ML_app():
+	st.header('ML Model')
+	with st.expander('Info'):
+		st.subheader(attribute_info)
 	loaded_model = load_model('model/rf.pkl')
 					 
 	col1,col2 = st.columns(2)
