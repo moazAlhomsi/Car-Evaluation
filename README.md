@@ -13,3 +13,5 @@ CAR car acceptability
 . . safety estimated safety of the car
 
 Car Evaluation Database was derived from a simple hierarchical decision model originally developed for the demonstration of DEX, M. Bohanec, V. Rajkovic: Expert system for decision making. Sistemica 1(1), pp. 145-157, 1990.)
+
+App's ML predective model link: https://basic-forest-app.herokuapp.com/
