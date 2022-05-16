@@ -9,6 +9,9 @@ verify_ssl=true
 streamlit="*"
 pandas="*"
 seaborn="*"
+joblib="*"
+matplotlib="*"
+numpy="*"
 
 [requires]
 python_version="3.9"
